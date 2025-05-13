@@ -10,7 +10,7 @@
         "position": "Mobile Developer",
         "location": "Bandung, West Java",
         "period": "August 2024 - Present",
-        "image": "/src/assets/images/company/uniguard.png",
+        "image": "/assets/images/company/uniguard.png",
         "description": "Developed internal applications to enhance operational efficiency. Built applications using Flutter (with Riverpod) for state management and native platforms (Kotlin, Java, Swift). Translated business requirements into functional and scalable software solutions. Worked closely with cross-functional teams to design and implement new features. Optimized application performance and resolved technical issues. Maintained clean, modular, and well-documented code for future development."
       },
       {
@@ -18,7 +18,7 @@
         "position": "Flutter Mobile Developer",
         "location": "Purwakarna, West Java",
         "period": "June 2023 - July 2024",
-        "image": "/src/assets/images/company/zmi.png",
+        "image": "/assets/images/company/zmi.png",
         "description": "Designed and implemented new features in mobile apps using Flutter, implemented BloC architecture, fixed bugs, and learned best practices in software development."
       },
       {
@@ -26,7 +26,7 @@
         "position": "Android Developer, Internship",
         "location": "Tasikmalaya, West Java",
         "period": "July 2022 - October 2022",
-        "image": "/src/assets/images/company/prahwa.png",
+        "image": "/assets/images/company/prahwa.png",
         "description": "Learned Dart and Flutter from basic, slicing UI design from Figma, created example projects, and implemented BloC state management and clean architecture."
       }
     ]
@@ -44,7 +44,7 @@
       "id": 1,
       "title": "Bebunge",
       "description": "Bebunge is a One-Stop Portal Service owned by the Bekasi Regency Communication, Informatics, Cryptography and Statistics Service. With Bebunge, the public will get information about government programs and other information. The Bebunge application functions as an application for complaints and aspirations from the public which will then be forwarded to the relevant section for follow-up.",
-      "image": "/src/assets/images/projects/bebunge.png",
+      "image": "/assets/images/projects/bebunge.png",
       "technologies": ["Flutter", "Bloc", "REST API", "Google Maps API"],
       "link": "https://play.google.com/store/apps/details?id=apps.diskominfobekasikab.bebunge"
     },
@@ -52,7 +52,7 @@
       "id": 2,
       "title": "Prosmart",
       "description": "ProSmart application is the first free online evidence return application in Indonesia. You can download this ProSmart application on Playstore. In this application you can check your belongings that have been used as evidence in court at the Cikarang District Court",
-      "image": "/src/assets/images/projects/prosmart.png",
+      "image": "/assets/images/projects/prosmart.png",
       "technologies": ["Flutter", "Bloc", "REST API"],
       "link": "https://play.google.com/store/apps/details?id=com.zen.prosmart"
     },
@@ -60,7 +60,7 @@
       "id": 3,
       "title": "UniGuardZ",
       "description": "UniGuard Z is the next generation staff presence, guard tour management and location verification platform developed from over 20 years of experience in the Australian security and hygiene industry. Designed to be incredibly simple and flexible enough to capture the exact data you need, delivered straight to your inbox! UniGuard has successfully fought public litigation claims, secured payment for services rendered and streamlined your workforce operations by helping to ensure data transparency across your workforce.",
-      "image": "/src/assets/images/projects/uniguardz.png",
+      "image": "/assets/images/projects/uniguardz.png",
       "technologies": ["Flutter", "Kotlin", "Swift", "SQLite", "REST API", "Google Maps API"],
       "link": "https://play.google.com/store/apps/details?id=com.uniguard.uniguard_z"
     },
@@ -68,7 +68,7 @@
       "id": 4,
       "title": "PTT Uniguard",
       "description": "Introducing UNIGUARD PTT, a modern communication solution designed to simplify and accelerate your team's communication. In this digital era, we understand that speed, efficiency, and security are key to maintaining smooth business or organization operations. Uniguard PTT is here as an answer to these needs by offering a reliable and easy-to-use Push-to-Talk (PTT) platform.",
-      "image": "/src/assets/images/projects/ptt_uniguard.png",
+      "image": "/assets/images/projects/ptt_uniguard.png",
       "technologies": ["Java", "REST API", "WebSocket", "Mumble Server", "Google Maps API"],
       "link": "https://play.google.com/store/apps/details?id=com.uniguard.ptt_app"
     },
@@ -76,7 +76,7 @@
       "id": 5,
       "title": "GPS Uniguard",
       "description": "GPS Uniguard is a mobile application for managing GPS tracking devices. It requires a Traccar server instance to work.",
-      "image": "/src/assets/images/projects/gps_uniguard.png",
+      "image": "/assets/images/projects/gps_uniguard.png",
       "technologies": ["Kotlin", "Swift", "WebView", "Caching"],
       "link": "https://play.google.com/store/apps/details?id=com.uniguard.gps"
     },
@@ -84,7 +84,7 @@
       "id": 6,
       "title": "BLE Uniguard",
       "description": "BLE Uniguard is a mobile application for managing BLE tracking devices. It requires a Traccar server instance to work.",
-      "image": "/src/assets/images/projects/ble_uniguard.png",
+      "image": "/assets/images/projects/ble_uniguard.png",
       "technologies": ["Kotlin", "REST API", "BLE"],
       "link": "https://play.google.com/store/apps/details?id=com.uniguard.ble_scanner"
     }

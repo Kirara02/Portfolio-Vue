@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import portfolioData from '../data/portfolio.json'
 import StatCard from './cards/StatCard.vue'
-import profileImage from '../assets/images/profile.jpeg'
+import profileImage from '/assets/images/profile.jpeg'
 import ProfileImage from './common/ProfileImage.vue'
 import CTAButton from './common/CTAButton.vue'
 import ScrollIndicator from './common/ScrollIndicator.vue'
-import resumePDF from '../assets/FathulHidayat_Resume.pdf'
+import resumePDF from '/assets/FathulHidayat_Resume.pdf'
 </script>
 
 <template>
