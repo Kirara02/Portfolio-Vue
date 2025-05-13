@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { useActiveSection } from '../composables/useActiveSection';
+import { useScroll } from '../composables/useScroll';
 import ThemeToggle from './common/ThemeToggle.vue'
 
 const menuItems = [
@@ -10,40 +11,24 @@ const menuItems = [
   { name: 'Contact', href: '#contact' }
 ]
 
-const activeSection = ref('home')
+const { activeSection } = useActiveSection(menuItems.map(item => item.href.substring(1)))
+const { isScrolled, scrollProgress } = useScroll()
 
-const observerCallback = (entries: IntersectionObserverEntry[]) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      activeSection.value = entry.target.id
-    }
-  })
-}
-
-let observer: IntersectionObserver
-
-onMounted(() => {
-  observer = new IntersectionObserver(observerCallback, {
-    rootMargin: '-50% 0px -50% 0px'
-  })
-
-  menuItems.forEach(item => {
-    const element = document.querySelector(item.href)
-    if (element) {
-      observer.observe(element)
-    }
-  })
-})
-
-onUnmounted(() => {
-  if (observer) {
-    observer.disconnect()
-  }
-})
 </script>
 
 <template>
-  <nav class="fixed top-0 left-0 right-0 glass-effect shadow-md z-50">
+  <nav 
+    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+    :class="[
+      isScrolled ? 'glass-effect shadow-md' : 'bg-transparent',
+    ]"
+  >
+    <!-- Progress Bar -->
+    <div 
+      class="absolute bottom-0 left-0 h-0.5 bg-emerald-500 transition-all duration-300"
+      :style="{ width: `${scrollProgress}%` }"
+    ></div>
+
     <div class="container mx-auto px-4">
       <div class="flex justify-between items-center h-16">
         <div class="text-xl font-bold gradient-text">Portfolio</div>

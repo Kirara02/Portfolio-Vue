@@ -1,26 +1,7 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { useTheme } from '../../composables/useTheme'
 
-const isDark = ref(false)
-
-const toggleTheme = () => {
-  isDark.value = !isDark.value
-  document.documentElement.setAttribute('data-theme', isDark.value ? 'dark' : 'light')
-  localStorage.setItem('theme', isDark.value ? 'dark' : 'light')
-}
-
-onMounted(() => {
-  const savedTheme = localStorage.getItem('theme')
-  if (savedTheme) {
-    isDark.value = savedTheme === 'dark'
-    document.documentElement.setAttribute('data-theme', savedTheme)
-  } else {
-    // Check system preference
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    isDark.value = prefersDark
-    document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light')
-  }
-})
+const { isDark, toggleTheme } = useTheme()
 </script>
 
 <template>

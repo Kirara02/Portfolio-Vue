@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref, onMounted } from 'vue'
 import portfolioData from '../data/portfolio.json'
 import StatCard from './cards/StatCard.vue'
 import profileImage from '/assets/images/profile.jpeg'
@@ -6,14 +7,34 @@ import ProfileImage from './common/ProfileImage.vue'
 import CTAButton from './common/CTAButton.vue'
 import ScrollIndicator from './common/ScrollIndicator.vue'
 import resumePDF from '/assets/FathulHidayat_Resume.pdf'
+
+const opacity = ref(0)
+const translateY = ref(20)
+
+onMounted(() => {
+  // Reset animation values
+  opacity.value = 1
+  translateY.value = 0
+})
 </script>
 
 <template>
-  <section id="home" class="pt-20 min-h-screen flex items-center relative">
+  <section 
+    id="home" 
+    class="min-h-screen flex items-center relative py-20"
+    style="scroll-margin-top: 4rem;"
+  >
     <div class="container mx-auto px-4">
       <div class="flex flex-col md:flex-row items-center justify-between gap-12">
         <!-- Left side: Text content -->
-        <div class="flex-1 text-left">
+        <div 
+          class="flex-1 text-left"
+          :style="{
+            opacity: opacity,
+            transform: `translateY(${translateY}px)`,
+            transition: 'all 0.8s ease-out'
+          }"
+        >
           <h1 class="text-4xl md:text-6xl font-bold mb-4 gradient-text">{{ portfolioData.name }}</h1>
           <p class="text-xl text-secondary mb-6">{{ portfolioData.title }}</p>
           <p class="text-secondary mb-8 max-w-xl">{{ portfolioData.about.brief }}</p>
@@ -43,7 +64,14 @@ import resumePDF from '/assets/FathulHidayat_Resume.pdf'
         </div>
 
         <!-- Right side: Profile image -->
-        <div class="flex-1 flex justify-center">
+        <div 
+          class="flex-1 flex justify-center"
+          :style="{
+            opacity: opacity,
+            transform: `translateY(${translateY}px)`,
+            transition: 'all 0.8s ease-out 0.2s'
+          }"
+        >
           <ProfileImage :src="profileImage" :alt="portfolioData.name" />
         </div>
       </div>
