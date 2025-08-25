@@ -2,8 +2,8 @@
   "name": "FATHUL HIDAYAT",
   "title": "Software Developer",
   "about": {
-    "brief": "Software developer with 3 years of experience in Flutter and native development, passionate about creating efficient and user-friendly applications.",
-    "description": "Software developer with 3 years of programming experience, specializing in Flutter and native development. Passionate about building efficient, user-friendly applications with clean and maintainable code. Quick learner with strong problem-solving skills, eager to contribute and grow in a professional development environment.",
+    "brief": "Full-stack mobile developer with 3 years of experience in Flutter, native development, and AI integration. Passionate about creating efficient, user-friendly applications with real-time features and cutting-edge technologies.",
+    "description": "Experienced software developer with 3 years of programming experience, specializing in cross-platform mobile development (Flutter) and native platforms (Android/iOS). Proven track record of developing and publishing 6+ applications on Google Play Store. Expertise in full-stack development with Go backend, real-time communication (WebSocket), AI integration (Google Gemini, OpenAI), and modern architecture patterns. Passionate about building scalable, maintainable applications with clean code principles. Quick learner with strong problem-solving skills, experienced in translating business requirements into functional software solutions.",
     "workHistory": [
       {
         "company": "PT UniGuard Indonesia",
@@ -11,7 +11,7 @@
         "location": "Bandung, West Java",
         "period": "August 2024 - Present",
         "image": "/assets/images/company/uniguard.png",
-        "description": "Developed internal applications to enhance operational efficiency. Built applications using Flutter (with Riverpod) for state management and native platforms (Kotlin, Java, Swift). Translated business requirements into functional and scalable software solutions. Worked closely with cross-functional teams to design and implement new features. Optimized application performance and resolved technical issues. Maintained clean, modular, and well-documented code for future development."
+        "description": "Developed and maintained mobile applications for both cross-platform (Flutter with Riverpod) and native platforms (Kotlin, Java, Swift). Experienced in full app lifecycle from development to Play Store publishing. Implemented real-time communication features using WebSocket and push notifications with Firebase Cloud Messaging (FCM). Translated business requirements into functional and scalable software solutions. Worked closely with cross-functional teams to design and implement new features. Optimized application performance and resolved technical issues. Maintained clean, modular, and well-documented code for future development."
       },
       {
         "company": "PT Zen Multimedia Indonesia",
@@ -32,16 +32,27 @@
     ]
   },
   "skills": [
-    { "name": "Flutter", "level": 90, "category": "mobile" },
+    { "name": "Flutter", "level": 95, "category": "mobile" },
     { "name": "Kotlin", "level": 85, "category": "android" },
-    { "name": "Java", "level": 85, "category": "android" },
+    { "name": "Java", "level": 80, "category": "android" },
     { "name": "Swift", "level": 50, "category": "ios" },
-    { "name": "JavaScript", "level": 75, "category": "web" },
+    { "name": "Go", "level": 75, "category": "backend" },
+    { "name": "C#", "level": 70, "category": "desktop"},
+    { "name": "Python", "level": 65, "category": "iot"},
+    { "name": "JavaScript", "level": 70, "category": "web" },
     { "name": "PHP", "level": 80, "category": "web" }
   ],
   "projects": [
     {
       "id": 1,
+      "title": "UniGuardZ",
+      "description": "UniGuard Z is the next generation staff presence, guard tour management and location verification platform developed from over 20 years of experience in the Australian security and hygiene industry. Designed to be incredibly simple and flexible enough to capture the exact data you need, delivered straight to your inbox! UniGuard has successfully fought public litigation claims, secured payment for services rendered and streamlined your workforce operations by helping to ensure data transparency across your workforce.",
+      "image": "/assets/images/projects/uniguardz.png",
+      "technologies": ["Flutter", "Kotlin", "Swift", "SQLite", "REST API", "Google Maps ", "Firebase Cloud Messaging"],
+      "link": "https://play.google.com/store/apps/details?id=com.uniguard.uniguard_z"
+    },
+    {
+      "id": 2,
       "title": "Bebunge",
       "description": "Bebunge is a One-Stop Portal Service owned by the Bekasi Regency Communication, Informatics, Cryptography and Statistics Service. With Bebunge, the public will get information about government programs and other information. The Bebunge application functions as an application for complaints and aspirations from the public which will then be forwarded to the relevant section for follow-up.",
       "image": "/assets/images/projects/bebunge.png",
@@ -49,20 +60,12 @@
       "link": "https://play.google.com/store/apps/details?id=apps.diskominfobekasikab.bebunge"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Prosmart",
       "description": "ProSmart application is the first free online evidence return application in Indonesia. You can download this ProSmart application on Playstore. In this application you can check your belongings that have been used as evidence in court at the Cikarang District Court",
       "image": "/assets/images/projects/prosmart.png",
       "technologies": ["Flutter", "Bloc", "REST API"],
       "link": "https://play.google.com/store/apps/details?id=com.zen.prosmart"
-    },
-    {
-      "id": 3,
-      "title": "UniGuardZ",
-      "description": "UniGuard Z is the next generation staff presence, guard tour management and location verification platform developed from over 20 years of experience in the Australian security and hygiene industry. Designed to be incredibly simple and flexible enough to capture the exact data you need, delivered straight to your inbox! UniGuard has successfully fought public litigation claims, secured payment for services rendered and streamlined your workforce operations by helping to ensure data transparency across your workforce.",
-      "image": "/assets/images/projects/uniguardz.png",
-      "technologies": ["Flutter", "Kotlin", "Swift", "SQLite", "REST API", "Google Maps API"],
-      "link": "https://play.google.com/store/apps/details?id=com.uniguard.uniguard_z"
     },
     {
       "id": 4,
@@ -87,6 +90,14 @@
       "image": "/assets/images/projects/ble_uniguard.png",
       "technologies": ["Kotlin", "REST API", "BLE"],
       "link": "https://play.google.com/store/apps/details?id=com.uniguard.ble_scanner"
+    },
+    {
+      "id": 7,
+      "title": "XChat - Real-time Chat App",
+      "description": "A comprehensive real-time chat application with Flutter frontend and Go backend. Features user authentication, private/group chats, real-time messaging via WebSocket, and AI integration with Google Gemini and OpenAI ChatGPT. Users can interact with AI assistants directly within chat rooms through tools-level integration. The project demonstrates full-stack development capabilities with modern technologies and AI/ML integration.",
+      "image": "/assets/images/projects/xchat.png",
+      "technologies": ["Flutter", "Go", "WebSocket", "Riverpod", "Clean Architecture", "JWT", "PostgreSQL", "Google Gemini API", "OpenAI API", "AI Integration"],
+      "link": "https://github.com/Kirara02/Flutter-ChatApp"
     }
   ],
   "contact": {
