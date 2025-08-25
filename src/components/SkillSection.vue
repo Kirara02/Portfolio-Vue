@@ -13,6 +13,7 @@ import SkillCard from './cards/SkillCard.vue'
           :key="skill.name"
           :name="skill.name"
           :level="skill.level"
+          :category="skill.category"
         />
       </div>
     </div>

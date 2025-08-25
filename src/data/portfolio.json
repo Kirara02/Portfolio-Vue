@@ -95,7 +95,7 @@
       "id": 7,
       "title": "XChat - Real-time Chat App",
       "description": "A comprehensive real-time chat application with Flutter frontend and Go backend. Features user authentication, private/group chats, real-time messaging via WebSocket, and AI integration with Google Gemini and OpenAI ChatGPT. Users can interact with AI assistants directly within chat rooms through tools-level integration. The project demonstrates full-stack development capabilities with modern technologies and AI/ML integration.",
-      "image": "/assets/images/projects/xchat.png",
+      "image": "/assets/images/projects/xhat_app_feature.png",
       "technologies": ["Flutter", "Go", "WebSocket", "Riverpod", "Clean Architecture", "JWT", "PostgreSQL", "Google Gemini API", "OpenAI API", "AI Integration"],
       "link": "https://github.com/Kirara02/Flutter-ChatApp"
     }
