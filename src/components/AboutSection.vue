@@ -19,7 +19,7 @@ import WorkCard from './cards/WorkCard.vue'
           :period="work.period"
           :location="work.location"
           :description="work.description"
-          :image="work.image"
+        :image="work.image"
         />
       </div>
     </div>

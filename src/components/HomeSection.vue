@@ -6,7 +6,7 @@ import profileImage from '/assets/images/profile.jpeg'
 import ProfileImage from './common/ProfileImage.vue'
 import CTAButton from './common/CTAButton.vue'
 import ScrollIndicator from './common/ScrollIndicator.vue'
-import resumePDF from '/assets/FathulHidayat_Resume.pdf'
+import resumePDF from '/assets/Fathul_Hidayat_CV.pdf'
 
 const opacity = ref(0)
 const translateY = ref(20)
@@ -52,7 +52,7 @@ onMounted(() => {
             <CTAButton href="#project" text="View Projects" variant="secondary" />
             <a 
               :href="resumePDF" 
-              download="FathulHidayat_Resume.pdf"
+              download="Fathul_Hidayat_CV.pdf"
               class="px-6 py-3 rounded-full bg-white/10 text-secondary hover:bg-white/20 backdrop-blur-sm border border-white/20 transition-all duration-200 font-medium flex items-center gap-2"
             >
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
