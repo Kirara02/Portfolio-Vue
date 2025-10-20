@@ -33,14 +33,16 @@
   },
   "skills": [
     { "name": "Flutter", "level": 95, "category": "mobile" },
+    { "name": "React Native", "level": 70, "category": "mobile" },
+    { "name": "Kotlin Multiplatform", "level": 70, "category": "mobile" },
     { "name": "Kotlin", "level": 85, "category": "android" },
     { "name": "Java", "level": 80, "category": "android" },
     { "name": "Swift", "level": 50, "category": "ios" },
     { "name": "Go", "level": 75, "category": "backend" },
-    { "name": "C#", "level": 70, "category": "desktop"},
-    { "name": "Python", "level": 65, "category": "iot"},
+    { "name": "C#", "level": 70, "category": "desktop" },
+    { "name": "Python", "level": 65, "category": "iot" },
     { "name": "JavaScript", "level": 70, "category": "web" },
-    { "name": "PHP", "level": 80, "category": "web" }
+    { "name": "Laravel", "level": 80, "category": "web" }
   ],
   "projects": [
     {
@@ -48,7 +50,15 @@
       "title": "UniGuardZ",
       "description": "UniGuard Z is the next generation staff presence, guard tour management and location verification platform developed from over 20 years of experience in the Australian security and hygiene industry. Designed to be incredibly simple and flexible enough to capture the exact data you need, delivered straight to your inbox! UniGuard has successfully fought public litigation claims, secured payment for services rendered and streamlined your workforce operations by helping to ensure data transparency across your workforce.",
       "image": "/assets/images/projects/uniguardz.png",
-      "technologies": ["Flutter", "Kotlin", "Swift", "SQLite", "REST API", "Google Maps ", "Firebase Cloud Messaging"],
+      "technologies": [
+        "Flutter",
+        "Kotlin",
+        "Swift",
+        "SQLite",
+        "REST API",
+        "Google Maps ",
+        "Firebase Cloud Messaging"
+      ],
       "link": "https://play.google.com/store/apps/details?id=com.uniguard.uniguard_z"
     },
     {
@@ -72,7 +82,13 @@
       "title": "PTT Uniguard",
       "description": "Introducing UNIGUARD PTT, a modern communication solution designed to simplify and accelerate your team's communication. In this digital era, we understand that speed, efficiency, and security are key to maintaining smooth business or organization operations. Uniguard PTT is here as an answer to these needs by offering a reliable and easy-to-use Push-to-Talk (PTT) platform.",
       "image": "/assets/images/projects/ptt_uniguard.png",
-      "technologies": ["Java", "REST API", "WebSocket", "Mumble Server", "Google Maps API"],
+      "technologies": [
+        "Java",
+        "REST API",
+        "WebSocket",
+        "Mumble Server",
+        "Google Maps API"
+      ],
       "link": "https://play.google.com/store/apps/details?id=com.uniguard.ptt_app"
     },
     {
@@ -96,8 +112,27 @@
       "title": "XChat - Real-time Chat App",
       "description": "A comprehensive real-time chat application with Flutter frontend and Go backend. Features user authentication, private/group chats, real-time messaging via WebSocket, and AI integration with Google Gemini and OpenAI ChatGPT. Users can interact with AI assistants directly within chat rooms through tools-level integration. The project demonstrates full-stack development capabilities with modern technologies and AI/ML integration.",
       "image": "/assets/images/projects/xhat_app_feature.png",
-      "technologies": ["Flutter", "Go", "WebSocket", "Riverpod", "Clean Architecture", "JWT", "PostgreSQL", "Google Gemini API", "OpenAI API", "AI Integration"],
+      "technologies": [
+        "Flutter",
+        "Go",
+        "WebSocket",
+        "Riverpod",
+        "Clean Architecture",
+        "JWT",
+        "PostgreSQL",
+        "Google Gemini API",
+        "OpenAI API",
+        "AI Integration"
+      ],
       "link": "https://github.com/Kirara02/Flutter-ChatApp"
+    },
+    {
+      "id": 8,
+      "title": "Halmann RFID",
+      "description": "The Halmann RFID app is designed specifically for handheld devices equipped with RFID capabilities. The application leverages specialized SDKs provided by handheld device manufacturers to enable seamless RFID tag reading and management. It provides an intuitive interface for tracking and managing various items, batches, and transactions through integrated RFID scanning capabilities.",
+      "image": "/assets/images/projects/halmann_rfid.png",
+      "technologies": ["Kotlin", "REST API", "RFID SDK"],
+      "link": "#"
     }
   ],
   "contact": {
@@ -109,4 +144,4 @@
       "github": "https://github.com/Kirara02"
     }
   }
-} 
+}

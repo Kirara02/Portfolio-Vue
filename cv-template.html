@@ -1,371 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FATHUL HIDAYAT - Software Developer CV</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background: white;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+        border-bottom: 3px solid #2563eb;
+        padding-bottom: 20px;
+      }
+
+      .name {
+        font-size: 28px;
+        font-weight: bold;
+        color: #1e40af;
+        margin-bottom: 5px;
+      }
+
+      .title {
+        font-size: 18px;
+        color: #64748b;
+        margin-bottom: 15px;
+      }
+
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        font-size: 14px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .section {
+        margin-bottom: 25px;
+      }
+
+      .section-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #1e40af;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+
+      .summary {
+        text-align: justify;
+        line-height: 1.8;
+      }
+
+      .experience-item {
+        margin-bottom: 20px;
+      }
+
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+      }
+
+      .job-title {
+        font-weight: bold;
+        font-size: 16px;
+        color: #1e40af;
+      }
+
+      .company {
+        font-weight: bold;
+        color: #374151;
+      }
+
+      .period {
+        color: #6b7280;
+        font-size: 14px;
+      }
+
+      .location {
+        color: #6b7280;
+        font-size: 14px;
+      }
+
+      .job-description {
+        text-align: justify;
+        line-height: 1.6;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+      }
+
+      .skill-category {
+        margin-bottom: 15px;
+      }
+
+      .category-title {
+        font-weight: bold;
+        color: #374151;
+        margin-bottom: 8px;
+        font-size: 14px;
+      }
+
+      .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .skill-item {
+        background: #f1f5f9;
+        padding: 4px 12px;
+        border-radius: 15px;
+        font-size: 13px;
+        color: #374151;
+      }
+
+      .projects-grid {
+        display: grid;
+        gap: 20px;
+      }
+
+      .project-item {
+        border-left: 3px solid #2563eb;
+        padding-left: 15px;
+        margin-bottom: 15px;
+      }
+
+      .project-title {
+        font-weight: bold;
+        color: #1e40af;
+        margin-bottom: 5px;
+      }
+
+      .project-tech {
+        font-size: 13px;
+        color: #6b7280;
+        margin-bottom: 8px;
+      }
+
+      .project-description {
+        text-align: justify;
+        line-height: 1.6;
+        font-size: 14px;
+      }
+
+      @media print {
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
+          margin: 0;
+          padding: 15px;
         }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            border-bottom: 3px solid #2563eb;
-            padding-bottom: 20px;
-        }
-        
-        .name {
-            font-size: 28px;
-            font-weight: bold;
-            color: #1e40af;
-            margin-bottom: 5px;
-        }
-        
-        .title {
-            font-size: 18px;
-            color: #64748b;
-            margin-bottom: 15px;
-        }
-        
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            font-size: 14px;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
+
         .section {
-            margin-bottom: 25px;
+          page-break-inside: avoid;
         }
-        
-        .section-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #1e40af;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-        
-        .summary {
-            text-align: justify;
-            line-height: 1.8;
-        }
-        
-        .experience-item {
-            margin-bottom: 20px;
-        }
-        
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 8px;
-        }
-        
-        .job-title {
-            font-weight: bold;
-            font-size: 16px;
-            color: #1e40af;
-        }
-        
-        .company {
-            font-weight: bold;
-            color: #374151;
-        }
-        
-        .period {
-            color: #6b7280;
-            font-size: 14px;
-        }
-        
-        .location {
-            color: #6b7280;
-            font-size: 14px;
-        }
-        
-        .job-description {
-            text-align: justify;
-            line-height: 1.6;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-        
-        .skill-category {
-            margin-bottom: 15px;
-        }
-        
-        .category-title {
-            font-weight: bold;
-            color: #374151;
-            margin-bottom: 8px;
-            font-size: 14px;
-        }
-        
-        .skill-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-        
-        .skill-item {
-            background: #f1f5f9;
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 13px;
-            color: #374151;
-        }
-        
-        .projects-grid {
-            display: grid;
-            gap: 20px;
-        }
-        
-        .project-item {
-            border-left: 3px solid #2563eb;
-            padding-left: 15px;
-            margin-bottom: 15px;
-        }
-        
-        .project-title {
-            font-weight: bold;
-            color: #1e40af;
-            margin-bottom: 5px;
-        }
-        
-        .project-tech {
-            font-size: 13px;
-            color: #6b7280;
-            margin-bottom: 8px;
-        }
-        
-        .project-description {
-            text-align: justify;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        
-        @media print {
-            body {
-                margin: 0;
-                padding: 15px;
-            }
-            
-            .section {
-                page-break-inside: avoid;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <div class="name">FATHUL HIDAYAT</div>
-        <div class="title">Full-Stack Mobile Developer</div>
-        <div class="contact-info">
-            <div class="contact-item">📧 fahtul.singaparna@gmail.com</div>
-            <div class="contact-item">📱 +6281313320710</div>
-            <div class="contact-item">📍 Tasikmalaya, West Java, Indonesia</div>
-            <div class="contact-item">🔗 linkedin.com/in/fathul-hidayat-dev</div>
-            <div class="contact-item">💻 github.com/Kirara02</div>
-        </div>
+      <div class="name">FATHUL HIDAYAT</div>
+      <div class="title">Full-Stack Mobile Developer</div>
+      <div class="contact-info">
+        <div class="contact-item">📧 fahtul.singaparna@gmail.com</div>
+        <div class="contact-item">📱 +6281313320710</div>
+        <div class="contact-item">📍 Tasikmalaya, West Java, Indonesia</div>
+        <div class="contact-item">🔗 linkedin.com/in/fathul-hidayat-dev</div>
+        <div class="contact-item">💻 github.com/Kirara02</div>
+      </div>
     </div>
 
     <div class="section">
-        <div class="section-title">PROFESSIONAL SUMMARY</div>
-        <div class="summary">
-            Experienced software developer with 3 years of programming experience, specializing in cross-platform mobile development (Flutter) and native platforms (Android/iOS). Proven track record of developing and publishing 6+ applications on Google Play Store. Expertise in full-stack development with Go backend, real-time communication (WebSocket), AI integration (Google Gemini, OpenAI), and modern architecture patterns. Passionate about building scalable, maintainable applications with clean code principles. Quick learner with strong problem-solving skills, experienced in translating business requirements into functional software solutions.
-        </div>
+      <div class="section-title">PROFESSIONAL SUMMARY</div>
+      <div class="summary">
+        Experienced software developer with 3 years of programming experience,
+        specializing in cross-platform mobile development (Flutter) and native
+        platforms (Android/iOS). Proven track record of developing and
+        publishing 6+ applications on Google Play Store. Expertise in full-stack
+        development with Go backend, real-time communication (WebSocket), AI
+        integration (Google Gemini, OpenAI), and modern architecture patterns.
+        Passionate about building scalable, maintainable applications with clean
+        code principles. Quick learner with strong problem-solving skills,
+        experienced in translating business requirements into functional
+        software solutions.
+      </div>
     </div>
 
     <div class="section">
-        <div class="section-title">PROFESSIONAL EXPERIENCE</div>
-        
-        <div class="experience-item">
-            <div class="job-header">
-                <div>
-                    <div class="job-title">Mobile Developer</div>
-                    <div class="company">PT UniGuard Indonesia</div>
-                </div>
-                <div>
-                    <div class="period">August 2024 - Present</div>
-                    <div class="location">Bandung, West Java</div>
-                </div>
-            </div>
-            <div class="job-description">
-                Developed and maintained mobile applications for both cross-platform (Flutter with Riverpod) and native platforms (Kotlin, Java, Swift). Experienced in full app lifecycle from development to Play Store publishing. Implemented real-time communication features using WebSocket and push notifications with Firebase Cloud Messaging (FCM). Translated business requirements into functional and scalable software solutions. Worked closely with cross-functional teams to design and implement new features. Optimized application performance and resolved technical issues. Maintained clean, modular, and well-documented code for future development.
-            </div>
-        </div>
+      <div class="section-title">PROFESSIONAL EXPERIENCE</div>
 
-        <div class="experience-item">
-            <div class="job-header">
-                <div>
-                    <div class="job-title">Flutter Mobile Developer</div>
-                    <div class="company">PT Zen Multimedia Indonesia</div>
-                </div>
-                <div>
-                    <div class="period">June 2023 - July 2024</div>
-                    <div class="location">Purwakarna, West Java</div>
-                </div>
-            </div>
-            <div class="job-description">
-                Designed and implemented new features in mobile apps using Flutter, implemented BloC architecture, fixed bugs, and learned best practices in software development.
-            </div>
+      <div class="experience-item">
+        <div class="job-header">
+          <div>
+            <div class="job-title">Mobile Developer</div>
+            <div class="company">PT UniGuard Indonesia</div>
+          </div>
+          <div>
+            <div class="period">August 2024 - Present</div>
+            <div class="location">Bandung, West Java</div>
+          </div>
         </div>
+        <div class="job-description">
+          Developed and maintained mobile applications for both cross-platform
+          (Flutter with Riverpod) and native platforms (Kotlin, Java, Swift).
+          Experienced in full app lifecycle from development to Play Store
+          publishing. Implemented real-time communication features using
+          WebSocket and push notifications with Firebase Cloud Messaging (FCM).
+          Translated business requirements into functional and scalable software
+          solutions. Worked closely with cross-functional teams to design and
+          implement new features. Optimized application performance and resolved
+          technical issues. Maintained clean, modular, and well-documented code
+          for future development.
+        </div>
+      </div>
 
-        <div class="experience-item">
-            <div class="job-header">
-                <div>
-                    <div class="job-title">Android Developer (Internship)</div>
-                    <div class="company">Prahwa</div>
-                </div>
-                <div>
-                    <div class="period">July 2022 - October 2022</div>
-                    <div class="location">Tasikmalaya, West Java</div>
-                </div>
-            </div>
-            <div class="job-description">
-                Learned Dart and Flutter from basic, slicing UI design from Figma, created example projects, and implemented BloC state management and clean architecture.
-            </div>
+      <div class="experience-item">
+        <div class="job-header">
+          <div>
+            <div class="job-title">Flutter Mobile Developer</div>
+            <div class="company">PT Zen Multimedia Indonesia</div>
+          </div>
+          <div>
+            <div class="period">June 2023 - July 2024</div>
+            <div class="location">Purwakarna, West Java</div>
+          </div>
         </div>
+        <div class="job-description">
+          Designed and implemented new features in mobile apps using Flutter,
+          implemented BloC architecture, fixed bugs, and learned best practices
+          in software development.
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="job-header">
+          <div>
+            <div class="job-title">Android Developer (Internship)</div>
+            <div class="company">Prahwa</div>
+          </div>
+          <div>
+            <div class="period">July 2022 - October 2022</div>
+            <div class="location">Tasikmalaya, West Java</div>
+          </div>
+        </div>
+        <div class="job-description">
+          Learned Dart and Flutter from basic, slicing UI design from Figma,
+          created example projects, and implemented BloC state management and
+          clean architecture.
+        </div>
+      </div>
     </div>
 
     <div class="section">
-        <div class="section-title">TECHNICAL SKILLS</div>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <div class="category-title">Mobile Development</div>
-                <div class="skill-list">
-                    <span class="skill-item">Flutter</span>
-                    <span class="skill-item">Kotlin</span>
-                    <span class="skill-item">Java</span>
-                    <span class="skill-item">Swift</span>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <div class="category-title">Backend & Web</div>
-                <div class="skill-list">
-                    <span class="skill-item">Go</span>
-                    <span class="skill-item">PHP</span>
-                    <span class="skill-item">JavaScript</span>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <div class="category-title">Desktop & IoT</div>
-                <div class="skill-list">
-                    <span class="skill-item">C#</span>
-                    <span class="skill-item">Python</span>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <div class="category-title">Technologies & Tools</div>
-                <div class="skill-list">
-                    <span class="skill-item">WebSocket</span>
-                    <span class="skill-item">REST API</span>
-                    <span class="skill-item">Firebase FCM</span>
-                    <span class="skill-item">Google Maps API</span>
-                    <span class="skill-item">PostgreSQL</span>
-                    <span class="skill-item">Clean Architecture</span>
-                    <span class="skill-item">Riverpod</span>
-                    <span class="skill-item">BLoC</span>
-                    <span class="skill-item">JWT</span>
-                    <span class="skill-item">Git</span>
-                </div>
-            </div>
+      <div class="section-title">TECHNICAL SKILLS</div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="category-title">Mobile Development</div>
+          <div class="skill-list">
+            <span class="skill-item">Flutter</span>
+            <span class="skill-item">React Native</span>
+            <span class="skill-item">Kotlin Multiplatform</span>
+            <span class="skill-item">Kotlin</span>
+            <span class="skill-item">Java</span>
+            <span class="skill-item">Swift</span>
+          </div>
         </div>
+
+        <div class="skill-category">
+          <div class="category-title">Backend & Web</div>
+          <div class="skill-list">
+            <span class="skill-item">Go</span>
+            <span class="skill-item">Laravel</span>
+            <span class="skill-item">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-title">Desktop & IoT</div>
+          <div class="skill-list">
+            <span class="skill-item">C#</span>
+            <span class="skill-item">Python</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-title">Technologies & Tools</div>
+          <div class="skill-list">
+            <span class="skill-item">WebSocket</span>
+            <span class="skill-item">REST API</span>
+            <span class="skill-item">Firebase FCM</span>
+            <span class="skill-item">Google Maps API</span>
+            <span class="skill-item">PostgreSQL</span>
+            <span class="skill-item">Clean Architecture</span>
+            <span class="skill-item">Riverpod</span>
+            <span class="skill-item">BLoC</span>
+            <span class="skill-item">JWT</span>
+            <span class="skill-item">Git</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="section">
-        <div class="section-title">KEY PROJECTS</div>
-        <div class="projects-grid">
-            
-            <div class="project-item">
-                <div class="project-title">UniGuardZ - Staff Management Platform</div>
-                <div class="project-tech">Flutter, Kotlin, Swift, SQLite, REST API, Google Maps, Firebase FCM</div>
-                <div class="project-description">
-                    Next generation staff presence, guard tour management and location verification platform. Features real-time tracking, data transparency, and workforce operations streamlining.
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-title">XChat - Real-time Chat App</div>
-                <div class="project-tech">Flutter, Go, WebSocket, Riverpod, Clean Architecture, JWT, PostgreSQL, Google Gemini API, OpenAI API</div>
-                <div class="project-description">
-                    Comprehensive real-time chat application with AI integration. Features user authentication, private/group chats, real-time messaging via WebSocket, and AI assistants integration with Google Gemini and OpenAI ChatGPT.
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-title">Bebunge - Government Portal</div>
-                <div class="project-tech">Flutter, Bloc, REST API, Google Maps API</div>
-                <div class="project-description">
-                    One-Stop Portal Service for Bekasi Regency government. Provides information about government programs and handles public complaints and aspirations with automated forwarding to relevant departments.
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-title">ProSmart - Legal Evidence Management</div>
-                <div class="project-tech">Flutter, Bloc, REST API</div>
-                <div class="project-description">
-                    First free online evidence return application in Indonesia. Allows users to check belongings used as evidence in court at Cikarang District Court.
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-title">PTT Uniguard - Push-to-Talk Communication</div>
-                <div class="project-tech">Java, REST API, WebSocket, Mumble Server, Google Maps API</div>
-                <div class="project-description">
-                    Modern communication solution for team communication with Push-to-Talk (PTT) platform. Offers speed, efficiency, and security for business operations.
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-title">GPS/BLE Uniguard - Device Management</div>
-                <div class="project-tech">Kotlin, Swift, WebView, Caching, REST API, BLE</div>
-                <div class="project-description">
-                    Mobile applications for managing GPS and BLE tracking devices. Requires Traccar server instance and provides comprehensive device management capabilities.
-                </div>
-            </div>
+      <div class="section-title">KEY PROJECTS</div>
+      <div class="projects-grid">
+        <div class="project-item">
+          <div class="project-title">UniGuardZ - Staff Management Platform</div>
+          <div class="project-tech">
+            Flutter, Kotlin, Swift, SQLite, REST API, Google Maps, Firebase FCM
+          </div>
+          <div class="project-description">
+            Next generation staff presence, guard tour management and location
+            verification platform. Features real-time tracking, data
+            transparency, and workforce operations streamlining.
+          </div>
         </div>
+
+        <div class="project-item">
+          <div class="project-title">XChat - Real-time Chat App</div>
+          <div class="project-tech">
+            Flutter, Go, WebSocket, Riverpod, Clean Architecture, JWT,
+            PostgreSQL, Google Gemini API, OpenAI API
+          </div>
+          <div class="project-description">
+            Comprehensive real-time chat application with AI integration.
+            Features user authentication, private/group chats, real-time
+            messaging via WebSocket, and AI assistants integration with Google
+            Gemini and OpenAI ChatGPT.
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-title">Bebunge - Government Portal</div>
+          <div class="project-tech">
+            Flutter, Bloc, REST API, Google Maps API
+          </div>
+          <div class="project-description">
+            One-Stop Portal Service for Bekasi Regency government. Provides
+            information about government programs and handles public complaints
+            and aspirations with automated forwarding to relevant departments.
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-title">ProSmart - Legal Evidence Management</div>
+          <div class="project-tech">Flutter, Bloc, REST API</div>
+          <div class="project-description">
+            First free online evidence return application in Indonesia. Allows
+            users to check belongings used as evidence in court at Cikarang
+            District Court.
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-title">
+            PTT Uniguard - Push-to-Talk Communication
+          </div>
+          <div class="project-tech">
+            Java, REST API, WebSocket, Mumble Server, Google Maps API
+          </div>
+          <div class="project-description">
+            Modern communication solution for team communication with
+            Push-to-Talk (PTT) platform. Offers speed, efficiency, and security
+            for business operations.
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-title">GPS/BLE Uniguard - Device Management</div>
+          <div class="project-tech">
+            Kotlin, Swift, WebView, Caching, REST API, BLE
+          </div>
+          <div class="project-description">
+            Mobile applications for managing GPS and BLE tracking devices.
+            Requires Traccar server instance and provides comprehensive device
+            management capabilities.
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-title">XChat - Real-time Chat App</div>
+          <div class="project-tech">
+            Flutter, Go, WebSocket, Riverpod, Clean Architecture, JWT,
+            PostgreSQL, Google Gemini API, OpenAI API
+          </div>
+          <div class="project-description">
+            Comprehensive real-time chat application with AI integration.
+            Features user authentication, private/group chats, real-time
+            messaging via WebSocket, and AI assistants integration with Google
+            Gemini and OpenAI ChatGPT.Users can interact with AI assistants
+            directly within chat rooms through tools-level integration. The
+            project demonstrates full-stack development capabilities with modern
+            technologies and AI/ML integration.
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-title">Halmann RFID</div>
+          <div class="project-tech"></div>
+          <div class="project-description">
+            The Halmann RFID app is designed specifically for handheld devices
+            equipped with RFID capabilities. The application leverages
+            specialized SDKs provided by handheld device manufacturers to enable
+            seamless RFID tag reading and management. It provides an intuitive
+            interface for tracking and managing various items, batches, and
+            transactions through integrated RFID scanning capabilities.
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="section">
-        <div class="section-title">ACHIEVEMENTS</div>
-        <div class="summary">
-            • Successfully developed and published 6+ applications on Google Play Store<br>
-            • Implemented AI integration with Google Gemini and OpenAI APIs in production applications<br>
-            • Built full-stack applications with Flutter frontend and Go backend<br>
-            • Experienced in real-time communication systems using WebSocket<br>
-            • Proficient in both cross-platform and native mobile development<br>
-            • Strong expertise in modern architecture patterns and clean code principles
-        </div>
+      <div class="section-title">ACHIEVEMENTS</div>
+      <div class="summary">
+        • Successfully developed and published 6+ applications on Google Play
+        Store<br />
+        • Implemented AI integration with Google Gemini and OpenAI APIs in
+        production applications<br />
+        • Built full-stack applications with Flutter frontend and Go backend<br />
+        • Experienced in real-time communication systems using WebSocket<br />
+        • Proficient in both cross-platform and native mobile development<br />
+        • Strong expertise in modern architecture patterns and clean code
+        principles
+      </div>
     </div>
-</body>
+  </body>
 </html>
