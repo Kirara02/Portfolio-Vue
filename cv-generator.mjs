@@ -16,7 +16,8 @@ function generateHTML(portfolio) {
         backend: 'Backend Development',
         web: 'Web Development',
         desktop: 'Desktop Development',
-        iot: 'IoT Development'
+        iot: 'IoT Development',
+        tools: 'Tools & Technologies'
     };
 
     return `<!DOCTYPE html>

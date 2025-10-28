@@ -42,7 +42,20 @@
     { "name": "C#", "level": 70, "category": "desktop" },
     { "name": "Python", "level": 65, "category": "iot" },
     { "name": "JavaScript", "level": 70, "category": "web" },
-    { "name": "Laravel", "level": 80, "category": "web" }
+    { "name": "Laravel", "level": 80, "category": "web" },
+    { "name": "VS Code", "category": "tools" },
+    { "name": "Android Studio", "category": "tools" },
+    { "name": "Xcode", "category": "tools" },
+    { "name": "Postman", "category": "tools" },
+    { "name": "Git", "category": "tools" },
+    { "name": "GitHub", "category": "tools" },
+    { "name": "Figma", "category": "tools" },
+    { "name": "Trello", "category": "tools" },
+    { "name": "Discord", "category": "tools" },
+    { "name": "Docker", "category": "tools" },
+    { "name": "Firebase", "category": "tools" },
+    { "name": "PostgreSQL", "category": "tools" },
+    { "name": "SQLite", "category": "tools" }
   ],
   "projects": [
     {
