@@ -4,7 +4,7 @@ import SkillCard from "./cards/SkillCard.vue";
 import ToolCard from "./cards/ToolCard.vue";
 
 const programmingSkills = portfolioData.skills.filter(
-  (skill) => skill.category !== "tools"
+  (skill) => skill.category !== "tools" && skill.level !== undefined
 );
 const tools = portfolioData.skills.filter(
   (skill) => skill.category === "tools"
@@ -26,7 +26,7 @@ const tools = portfolioData.skills.filter(
             v-for="skill in programmingSkills"
             :key="skill.name"
             :name="skill.name"
-            :level="skill.level"
+            :level="skill.level!"
             :category="skill.category"
           />
         </div>
