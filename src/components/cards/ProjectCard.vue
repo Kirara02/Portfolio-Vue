@@ -4,7 +4,7 @@ defineProps<{
   description: string
   image: string
   technologies: string[]
-  link: string | Record<string, string>
+  link: string | Record<string, string | undefined>
 }>()
 
 const getLinkClass = (type: string) => {
