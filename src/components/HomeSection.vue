@@ -99,7 +99,7 @@ onMounted(() => {
               <!-- Dropdown Menu -->
               <div
                 v-if="showCVDropdown"
-                class="absolute top-full mt-2 w-56 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-lg shadow-xl border border-white/20 dark:border-gray-700/50 z-50"
+                class="absolute top-full mt-2 w-56 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-lg shadow-xl border border-white/20 dark:border-gray-700/50 z-50 md:right-0 right-0 md:left-auto left-1/2 transform md:transform-none -translate-x-1/2 md:-translate-x-0"
                 @click.stop
               >
                 <div class="py-2">
