@@ -72,7 +72,10 @@
         "Google Maps ",
         "Firebase Cloud Messaging"
       ],
-      "link": "https://play.google.com/store/apps/details?id=com.uniguard.uniguard_z"
+      "link": {
+        "playStore": "https://play.google.com/store/apps/details?id=com.uniguard.uniguard_z",
+        "appStore": "https://apps.apple.com/us/app/uniguardz/id6751801482"
+      }
     },
     {
       "id": 2,
@@ -80,7 +83,9 @@
       "description": "Bebunge is a One-Stop Portal Service owned by the Bekasi Regency Communication, Informatics, Cryptography and Statistics Service. With Bebunge, the public will get information about government programs and other information. The Bebunge application functions as an application for complaints and aspirations from the public which will then be forwarded to the relevant section for follow-up.",
       "image": "/assets/images/projects/bebunge.png",
       "technologies": ["Flutter", "Bloc", "REST API", "Google Maps API"],
-      "link": "https://play.google.com/store/apps/details?id=apps.diskominfobekasikab.bebunge"
+      "link": {
+        "playStore": "https://play.google.com/store/apps/details?id=apps.diskominfobekasikab.bebunge"
+      }
     },
     {
       "id": 3,
@@ -88,7 +93,9 @@
       "description": "ProSmart application is the first free online evidence return application in Indonesia. You can download this ProSmart application on Playstore. In this application you can check your belongings that have been used as evidence in court at the Cikarang District Court",
       "image": "/assets/images/projects/prosmart.png",
       "technologies": ["Flutter", "Bloc", "REST API"],
-      "link": "https://play.google.com/store/apps/details?id=com.zen.prosmart"
+      "link": {
+        "playStore": "https://play.google.com/store/apps/details?id=com.zen.prosmart"
+      }
     },
     {
       "id": 4,
@@ -102,7 +109,9 @@
         "Mumble Server",
         "Google Maps API"
       ],
-      "link": "https://play.google.com/store/apps/details?id=com.uniguard.ptt_app"
+      "link": {
+        "playStore": "https://play.google.com/store/apps/details?id=com.uniguard.ptt_app"
+      }
     },
     {
       "id": 5,
@@ -110,7 +119,9 @@
       "description": "GPS Uniguard is a mobile application for managing GPS tracking devices. It requires a Traccar server instance to work.",
       "image": "/assets/images/projects/gps_uniguard.png",
       "technologies": ["Kotlin", "Swift", "WebView", "Caching"],
-      "link": "https://play.google.com/store/apps/details?id=com.uniguard.gps"
+      "link": {
+        "playStore": "https://play.google.com/store/apps/details?id=com.uniguard.gps"
+      }
     },
     {
       "id": 6,
@@ -118,7 +129,9 @@
       "description": "BLE Uniguard is a mobile application for managing BLE tracking devices. It requires a Traccar server instance to work.",
       "image": "/assets/images/projects/ble_uniguard.png",
       "technologies": ["Kotlin", "REST API", "BLE"],
-      "link": "https://play.google.com/store/apps/details?id=com.uniguard.ble_scanner"
+      "link": {
+        "playStore": "https://play.google.com/store/apps/details?id=com.uniguard.ble_scanner"
+      }
     },
     {
       "id": 7,
@@ -137,15 +150,19 @@
         "OpenAI API",
         "AI Integration"
       ],
-      "link": "https://github.com/Kirara02/Flutter-ChatApp"
+      "link": {
+        "repository": "https://github.com/Kirara02/Flutter-ChatApp"
+      }
     },
     {
       "id": 8,
-      "title": "Halmann RFID",
-      "description": "The Halmann RFID app is designed specifically for handheld devices equipped with RFID capabilities. The application leverages specialized SDKs provided by handheld device manufacturers to enable seamless RFID tag reading and management. It provides an intuitive interface for tracking and managing various items, batches, and transactions through integrated RFID scanning capabilities.",
+      "title": "Assets Track RFID",
+      "description": "The Assets Track RFID app is designed specifically for handheld devices equipped with RFID capabilities. The application leverages specialized SDKs provided by handheld device manufacturers to enable seamless RFID tag reading and management. It provides an intuitive interface for tracking and managing various items, batches, and transactions through integrated RFID scanning capabilities.",
       "image": "/assets/images/projects/halmann_rfid.png",
       "technologies": ["Kotlin", "REST API", "RFID SDK"],
-      "link": "#"
+      "link": {
+        "private": "Enterprise RFID inventory management system"
+      }
     }
   ],
   "contact": {
