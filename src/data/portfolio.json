@@ -1,9 +1,9 @@
 {
   "name": "FATHUL HIDAYAT",
-  "title": "Software Developer",
+  "title": "Mobile App Developer",
   "about": {
-    "brief": "Full-stack mobile developer with 3 years of experience in Flutter, native development, and AI integration. Passionate about creating efficient, user-friendly applications with real-time features and cutting-edge technologies.",
-    "description": "Experienced software developer with 3 years of programming experience, specializing in cross-platform mobile development (Flutter) and native platforms (Android/iOS). Proven track record of developing and publishing 6+ applications on Google Play Store. Expertise in full-stack development with Go backend, real-time communication (WebSocket), AI integration (Google Gemini, OpenAI), and modern architecture patterns. Passionate about building scalable, maintainable applications with clean code principles. Quick learner with strong problem-solving skills, experienced in translating business requirements into functional software solutions.",
+    "brief": "Experienced mobile developer with 3+ years building cross-platform apps. Published 7+ applications across Google Play Store and Apple App Store. Expert in Flutter, native Android/iOS development, and AI integration.",
+    "description": "Experienced software developer with 3 years of programming experience, specializing in cross-platform mobile development (Flutter) and native platforms (Android/iOS). Successfully published 6+ applications on Google Play Store and 1 application on Apple App Store. Expertise in full-stack development with Go backend, real-time communication (WebSocket), AI integration (Google Gemini, OpenAI), and modern architecture patterns. Remote-work ready with strong experience in asynchronous communication, agile methodologies, and distributed team collaboration. Passionate about building scalable, maintainable applications with clean code principles and CI/CD practices.",
     "workHistory": [
       {
         "company": "PT UniGuard Indonesia",
@@ -31,6 +31,14 @@
       }
     ]
   },
+  "education": [
+    {
+      "degree": "Software Engineering",
+      "school": "SMK YPC Tasikmalaya",
+      "year": "2023",
+      "description": "Graduated as top student in Software Engineering program. Specialized in software development, programming fundamentals, and practical application development."
+    }
+  ],
   "skills": [
     { "name": "Flutter", "level": 95, "category": "mobile" },
     { "name": "React Native", "level": 70, "category": "mobile" },
@@ -162,6 +170,25 @@
       "technologies": ["Kotlin", "REST API", "RFID SDK"],
       "link": {
         "private": "Enterprise RFID inventory management system"
+      }
+    },
+    {
+      "id": 9,
+      "title": "NetGuard",
+      "description": "NetGuard is a comprehensive server monitoring application built with Kotlin Multiplatform, designed to help employees stay informed about server status and ensure timely maintenance. The app provides real-time server monitoring, incident reporting, and comprehensive analytics to keep your infrastructure running smoothly.",
+      "image": "/assets/images/projects/netguard.png",
+      "technologies": [
+        "Android",
+        "iOS",
+        "Kotlin",
+        "Compose Multiplatform",
+        "SQLDelight",
+        "REST API",
+        "Background Tasks",
+        "Firebase Cloud Messaging"
+      ],
+      "link": {
+        "private": "Enterprise server monitoring and incident management system"
       }
     }
   ],

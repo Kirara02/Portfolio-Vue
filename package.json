@@ -6,7 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cv": "node cv-generator.mjs",
+    "cv:ats": "node cv-generator.mjs ats",
+    "cv:developer": "node cv-generator.mjs developer",
+    "cv:executive": "node cv-generator.mjs executive",
+    "cv:compact": "node cv-generator.mjs compact"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.6",

@@ -6,10 +6,14 @@ import profileImage from "/assets/images/me.jpg";
 import ProfileImage from "./common/ProfileImage.vue";
 import CTAButton from "./common/CTAButton.vue";
 import ScrollIndicator from "./common/ScrollIndicator.vue";
-import resumePDF from "/assets/Fathul_Hidayat_CV.pdf";
+import resumeATS from "/assets/Fathul_Hidayat_CV.pdf";
+import resumeDeveloper from "/assets/Fathul_Hidayat_CV_Developer.pdf";
+import resumeExecutive from "/assets/Fathul_Hidayat_CV_Executive.pdf";
+import resumeCompact from "/assets/Fathul_Hidayat_CV_Compact.pdf";
 
 const opacity = ref(0);
 const translateY = ref(20);
+const showCVDropdown = ref(false);
 
 onMounted(() => {
   // Reset animation values
@@ -60,26 +64,99 @@ onMounted(() => {
               text="View Projects"
               variant="secondary"
             />
-            <a
-              :href="resumePDF"
-              download="Fathul_Hidayat_CV.pdf"
-              class="px-6 py-3 rounded-full bg-white/10 text-secondary hover:bg-white/20 backdrop-blur-sm border border-white/20 transition-all duration-200 font-medium flex items-center gap-2"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+
+            <!-- CV Download Dropdown -->
+            <div class="relative">
+              <button
+                @click="showCVDropdown = !showCVDropdown"
+                class="px-6 py-3 rounded-full bg-white/10 text-secondary hover:bg-white/20 backdrop-blur-sm border border-white/20 transition-all duration-200 font-medium flex items-center gap-2"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                />
-              </svg>
-              Download CV
-            </a>
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                  />
+                </svg>
+                Download CV
+                <svg
+                  class="w-4 h-4 transition-transform"
+                  :class="{ 'rotate-180': showCVDropdown }"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <!-- Dropdown Menu -->
+              <div
+                v-if="showCVDropdown"
+                class="absolute top-full mt-2 w-56 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-lg shadow-xl border border-white/20 dark:border-gray-700/50 z-50"
+                @click.stop
+              >
+                <div class="py-2">
+                  <a
+                    :href="resumeATS"
+                    download="Fathul_Hidayat_CV.pdf"
+                    class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                    @click="showCVDropdown = false"
+                  >
+                    <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
+                    <div>
+                      <div class="font-medium">ATS Format</div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">Standard, ATS-friendly</div>
+                    </div>
+                  </a>
+
+                  <a
+                    :href="resumeDeveloper"
+                    download="Fathul_Hidayat_CV_Developer.pdf"
+                    class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                    @click="showCVDropdown = false"
+                  >
+                    <div class="w-3 h-3 bg-purple-500 rounded-full"></div>
+                    <div>
+                      <div class="font-medium">Developer Format</div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">Tech-focused, code style</div>
+                    </div>
+                  </a>
+
+                  <a
+                    :href="resumeExecutive"
+                    download="Fathul_Hidayat_CV_Executive.pdf"
+                    class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                    @click="showCVDropdown = false"
+                  >
+                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                    <div>
+                      <div class="font-medium">Executive Format</div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">Professional, achievement-focused</div>
+                    </div>
+                  </a>
+
+                  <a
+                    :href="resumeCompact"
+                    download="Fathul_Hidayat_CV_Compact.pdf"
+                    class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                    @click="showCVDropdown = false"
+                  >
+                    <div class="w-3 h-3 bg-orange-500 rounded-full"></div>
+                    <div>
+                      <div class="font-medium">Compact Format</div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">Brief, scannable</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
