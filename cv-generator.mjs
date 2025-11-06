@@ -211,6 +211,29 @@ function generateATSFormat(portfolio, skillsByCategory, categoryTitles) {
         font-size: 14px;
       }
 
+      .project-links {
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .project-link {
+        display: inline-block;
+        padding: 4px 8px;
+        background: #f1f5f9;
+        color: #1e40af;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 500;
+        border: 1px solid #e2e8f0;
+      }
+
+      .project-link:hover {
+        background: #e2e8f0;
+      }
+
       @media print {
         body {
           margin: 0;
@@ -308,6 +331,13 @@ function generateATSFormat(portfolio, skillsByCategory, categoryTitles) {
           <div class="project-description">
             ${project.description}
           </div>
+          ${project.link ? `
+          <div class="project-links">
+            ${project.link.playStore ? `<a href="${project.link.playStore}" class="project-link" target="_blank">📱 Play Store</a>` : ''}
+            ${project.link.appStore ? `<a href="${project.link.appStore}" class="project-link" target="_blank">🍎 App Store</a>` : ''}
+            ${project.link.repository ? `<a href="${project.link.repository}" class="project-link" target="_blank">💻 GitHub</a>` : ''}
+          </div>
+          ` : ''}
         </div>
         `).join('')}
       </div>
@@ -585,6 +615,13 @@ function generateDeveloperFormat(portfolio, skillsByCategory, categoryTitles) {
        <div class="code-block">
          <span class="comment">// ${project.description}</span>
        </div>
+       ${project.link ? `
+       <div class="project-links" style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 10px;">
+         ${project.link.playStore ? `<a href="${project.link.playStore}" style="color: #50fa7b; text-decoration: none; border: 1px solid #50fa7b; padding: 5px 10px; border-radius: 4px; font-size: 12px;" target="_blank">📱 Play Store</a>` : ''}
+         ${project.link.appStore ? `<a href="${project.link.appStore}" style="color: #50fa7b; text-decoration: none; border: 1px solid #50fa7b; padding: 5px 10px; border-radius: 4px; font-size: 12px;" target="_blank">🍎 App Store</a>` : ''}
+         ${project.link.repository ? `<a href="${project.link.repository}" style="color: #50fa7b; text-decoration: none; border: 1px solid #50fa7b; padding: 5px 10px; border-radius: 4px; font-size: 12px;" target="_blank">💻 GitHub</a>` : ''}
+       </div>
+       ` : ''}
      </div>
      `).join('')}
    </div>
@@ -928,6 +965,13 @@ function generateExecutiveFormat(portfolio, skillsByCategory, categoryTitles) {
          <div class="project-description">
            ${project.description}
          </div>
+         ${project.link ? `
+         <div class="project-links" style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 10px;">
+           ${project.link.playStore ? `<a href="${project.link.playStore}" style="color: #2c3e50; text-decoration: none; background: #ecf0f1; padding: 6px 12px; border-radius: 4px; font-size: 13px; border: 1px solid #bdc3c7;" target="_blank">📱 Play Store</a>` : ''}
+           ${project.link.appStore ? `<a href="${project.link.appStore}" style="color: #2c3e50; text-decoration: none; background: #ecf0f1; padding: 6px 12px; border-radius: 4px; font-size: 13px; border: 1px solid #bdc3c7;" target="_blank">🍎 App Store</a>` : ''}
+           ${project.link.repository ? `<a href="${project.link.repository}" style="color: #2c3e50; text-decoration: none; background: #ecf0f1; padding: 6px 12px; border-radius: 4px; font-size: 13px; border: 1px solid #bdc3c7;" target="_blank">💻 GitHub</a>` : ''}
+         </div>
+         ` : ''}
        </div>
        `).join('')}
      </div>
@@ -1243,6 +1287,13 @@ function generateCompactFormat(portfolio, skillsByCategory, categoryTitles) {
          <div class="project-description">
            ${project.description}
          </div>
+         ${project.link ? `
+         <div class="project-links" style="margin-top: 8px; display: flex; flex-wrap: wrap; gap: 8px;">
+           ${project.link.playStore ? `<a href="${project.link.playStore}" style="color: #1e40af; text-decoration: none; background: #f1f5f9; padding: 3px 8px; border-radius: 4px; font-size: 10px; border: 1px solid #e2e8f0;" target="_blank">📱 Play Store</a>` : ''}
+           ${project.link.appStore ? `<a href="${project.link.appStore}" style="color: #1e40af; text-decoration: none; background: #f1f5f9; padding: 3px 8px; border-radius: 4px; font-size: 10px; border: 1px solid #e2e8f0;" target="_blank">🍎 App Store</a>` : ''}
+           ${project.link.repository ? `<a href="${project.link.repository}" style="color: #1e40af; text-decoration: none; background: #f1f5f9; padding: 3px 8px; border-radius: 4px; font-size: 10px; border: 1px solid #e2e8f0;" target="_blank">💻 GitHub</a>` : ''}
+         </div>
+         ` : ''}
        </div>
        `).join('')}
      </div>
