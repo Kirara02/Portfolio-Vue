@@ -169,7 +169,7 @@
       "image": "/assets/images/projects/halmann_rfid.png",
       "technologies": ["Kotlin", "REST API", "RFID SDK"],
       "link": {
-        "private": "Enterprise RFID inventory management system"
+        "playStore": "https://play.google.com/store/apps/details?id=com.uniguard.assets_track"
       }
     },
     {
@@ -188,7 +188,7 @@
         "Firebase Cloud Messaging"
       ],
       "link": {
-        "private": "Enterprise server monitoring and incident management system"
+        "playStore": "https://play.google.com/store/apps/details?id=com.uniguard.netguard_app"
       }
     }
   ],

@@ -92,7 +92,12 @@ onMounted(() => {
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
                 </svg>
               </button>
 
@@ -112,7 +117,9 @@ onMounted(() => {
                     <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
                     <div>
                       <div class="font-medium">ATS Format</div>
-                      <div class="text-xs text-gray-500 dark:text-gray-400">Standard, ATS-friendly</div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        Standard, ATS-friendly
+                      </div>
                     </div>
                   </a>
 
@@ -125,7 +132,9 @@ onMounted(() => {
                     <div class="w-3 h-3 bg-purple-500 rounded-full"></div>
                     <div>
                       <div class="font-medium">Developer Format</div>
-                      <div class="text-xs text-gray-500 dark:text-gray-400">Tech-focused, code style</div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        Tech-focused, code style
+                      </div>
                     </div>
                   </a>
 
@@ -138,7 +147,9 @@ onMounted(() => {
                     <div class="w-3 h-3 bg-green-500 rounded-full"></div>
                     <div>
                       <div class="font-medium">Executive Format</div>
-                      <div class="text-xs text-gray-500 dark:text-gray-400">Professional, achievement-focused</div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        Professional, achievement-focused
+                      </div>
                     </div>
                   </a>
 
@@ -151,7 +162,9 @@ onMounted(() => {
                     <div class="w-3 h-3 bg-orange-500 rounded-full"></div>
                     <div>
                       <div class="font-medium">Compact Format</div>
-                      <div class="text-xs text-gray-500 dark:text-gray-400">Brief, scannable</div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        Brief, scannable
+                      </div>
                     </div>
                   </a>
                 </div>
