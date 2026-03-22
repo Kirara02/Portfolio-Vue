@@ -13,6 +13,7 @@ const getLinkClass = (type: string) => {
     appStore: 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800',
     repository: 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600',
     demo: 'bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 hover:bg-purple-200 dark:hover:bg-purple-800',
+    website: 'bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-200 dark:hover:bg-emerald-800',
     private: 'bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300'
   }
   return classes[type as keyof typeof classes] || 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
@@ -24,6 +25,7 @@ const getLinkLabel = (type: string) => {
     appStore: 'App Store',
     repository: 'Repository',
     demo: 'Demo',
+    website: 'Website',
     private: 'Private App'
   }
   return labels[type as keyof typeof labels] || type.charAt(0).toUpperCase() + type.slice(1)

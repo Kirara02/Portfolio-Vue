@@ -336,6 +336,7 @@ function generateATSFormat(portfolio, skillsByCategory, categoryTitles) {
             ${project.link.playStore ? `<a href="${project.link.playStore}" class="project-link" target="_blank">📱 Play Store</a>` : ''}
             ${project.link.appStore ? `<a href="${project.link.appStore}" class="project-link" target="_blank">🍎 App Store</a>` : ''}
             ${project.link.repository ? `<a href="${project.link.repository}" class="project-link" target="_blank">💻 GitHub</a>` : ''}
+            ${project.link.website ? `<a href="${project.link.website}" class="project-link" target="_blank">🌐 Website</a>` : ''}
           </div>
           ` : ''}
         </div>
@@ -347,7 +348,6 @@ function generateATSFormat(portfolio, skillsByCategory, categoryTitles) {
       <div class="section-title">ACHIEVEMENTS</div>
       <div class="summary">
         • Successfully developed and published 7+ applications on Google Play Store and Apple App Store<br />
-        • Implemented AI integration with Google Gemini and OpenAI APIs in production applications<br />
         • Built full-stack applications with Flutter frontend and Go backend<br />
         • Experienced in real-time communication systems using WebSocket<br />
         • Proficient in both cross-platform and native mobile development<br />
@@ -630,7 +630,6 @@ function generateDeveloperFormat(portfolio, skillsByCategory, categoryTitles) {
      <div class="section-title">// ACHIEVEMENTS</div>
      <div class="achievement-list">
        <div class="achievement-item">Successfully developed and published 7+ applications on Google Play Store and Apple App Store</div>
-       <div class="achievement-item">Implemented AI integration with Google Gemini and OpenAI APIs in production</div>
        <div class="achievement-item">Built full-stack applications with Flutter frontend and Go backend</div>
        <div class="achievement-item">Experienced in real-time communication systems using WebSocket</div>
        <div class="achievement-item">Proficient in both cross-platform and native mobile development</div>
@@ -982,7 +981,6 @@ function generateExecutiveFormat(portfolio, skillsByCategory, categoryTitles) {
      <div class="achievements-section">
        <ul class="achievement-list">
          <li class="achievement-item">Successfully developed and published 7+ applications on Google Play Store and Apple App Store</li>
-         <li class="achievement-item">Implemented AI integration with Google Gemini and OpenAI APIs in production applications</li>
          <li class="achievement-item">Built full-stack applications with Flutter frontend and Go backend architecture</li>
          <li class="achievement-item">Experienced in real-time communication systems using WebSocket technology</li>
          <li class="achievement-item">Proficient in both cross-platform and native mobile development methodologies</li>
@@ -1303,7 +1301,6 @@ function generateCompactFormat(portfolio, skillsByCategory, categoryTitles) {
      <div class="section-title">Achievements</div>
      <div class="achievements">
        • 7+ published apps on Play Store & App Store<br>
-       • AI integration with Gemini & OpenAI<br>
        • Full-stack Flutter + Go development<br>
        • Real-time WebSocket communication<br>
        • Cross-platform & native expertise<br>
