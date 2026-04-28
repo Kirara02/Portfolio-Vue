@@ -1,9 +1,9 @@
 {
   "name": "FATHUL HIDAYAT",
-  "title": "Mobile App Developer",
+  "title": "Software Developer (Mobile & Backend)",
   "about": {
-    "brief": "Experienced mobile developer with 3+ years building cross-platform apps. Published 7+ applications across Google Play Store and Apple App Store. Expert in Flutter, and native Android/iOS development.",
-    "description": "Experienced software developer with 3 years of programming experience, specializing in cross-platform mobile development (Flutter) and native platforms (Android/iOS). Successfully published 6+ applications on Google Play Store and 1 application on Apple App Store. Expertise in full-stack development with Go backend, real-time communication (WebSocket), and modern architecture patterns. Remote-work ready with strong experience in asynchronous communication, agile methodologies, and distributed team collaboration. Passionate about building scalable, maintainable applications with clean code principles and CI/CD practices.",
+    "brief": "Experienced software developer with 3+ years experience, specializing in cross-platform mobile development and robust backend systems. Published 10+ applications across Google Play Store and Apple App Store. Expert in Flutter, Go, and native Android/iOS development.",
+    "description": "Experienced software developer with 3 years of programming experience, specializing in cross-platform mobile development (Flutter), native platforms (Android/iOS), and backend development (Go, .NET). Successfully published 10+ applications on Google Play Store and 1 application on Apple App Store. Expertise in full-stack development, real-time communication (WebSocket), and modern architecture patterns. Remote-work ready with strong experience in asynchronous communication, agile methodologies, and distributed team collaboration. Passionate about building scalable, maintainable applications with clean code principles and CI/CD practices.",
     "workHistory": [
       {
         "company": "PT UniGuard Indonesia",
@@ -41,15 +41,16 @@
   ],
   "skills": [
     { "name": "Flutter", "level": 95, "category": "mobile" },
-    { "name": "React Native", "level": 70, "category": "mobile" },
-    { "name": "Kotlin Multiplatform", "level": 80, "category": "mobile" },
-    { "name": "Kotlin", "level": 85, "category": "android" },
+    { "name": "React Native", "level": 75, "category": "mobile" },
+    { "name": "Kotlin Multiplatform", "level": 85, "category": "mobile" },
+    { "name": "Kotlin", "level": 90, "category": "android" },
     { "name": "Java", "level": 80, "category": "android" },
-    { "name": "Swift", "level": 60, "category": "ios" },
-    { "name": "Go", "level": 85, "category": "backend" },
-    { "name": "C#", "level": 70, "category": "desktop" },
-    { "name": "Python", "level": 65, "category": "iot" },
-    { "name": "JavaScript", "level": 70, "category": "web" },
+    { "name": "Swift", "level": 70, "category": "ios" },
+    { "name": "Go", "level": 90, "category": "backend" },
+    { "name": ".NET", "level": 80, "category": "backend" },
+    { "name": "C#", "level": 75, "category": "desktop" },
+    { "name": "Python", "level": 70, "category": "iot" },
+    { "name": "JavaScript", "level": 80, "category": "web" },
     { "name": "Laravel", "level": 80, "category": "web" },
     { "name": "VS Code", "category": "tools" },
     { "name": "Android Studio", "category": "tools" },
@@ -57,6 +58,7 @@
     { "name": "Postman", "category": "tools" },
     { "name": "Git", "category": "tools" },
     { "name": "GitHub", "category": "tools" },
+    { "name": "GitHub Actions", "category": "tools" },
     { "name": "Figma", "category": "tools" },
     { "name": "Trello", "category": "tools" },
     { "name": "Discord", "category": "tools" },
@@ -87,43 +89,6 @@
     },
     {
       "id": 2,
-      "title": "PTT Uniguard",
-      "description": "Introducing UNIGUARD PTT, a modern communication solution designed to simplify and accelerate your team's communication. In this digital era, we understand that speed, efficiency, and security are key to maintaining smooth business or organization operations. Uniguard PTT is here as an answer to these needs by offering a reliable and easy-to-use Push-to-Talk (PTT) platform.",
-      "image": "/assets/images/projects/ptt_uniguard.png",
-      "technologies": [
-        "Java",
-        "REST API",
-        "WebSocket",
-        "Mumble Server",
-        "Google Maps API"
-      ],
-      "link": {
-        "playStore": "https://play.google.com/store/apps/details?id=com.uniguard.ptt_app"
-      }
-    },
-    {
-      "id": 3,
-      "title": "GPS Uniguard",
-      "description": "GPS Uniguard is a mobile application for managing GPS tracking devices. It requires a Traccar server instance to work.",
-      "image": "/assets/images/projects/gps_uniguard.png",
-      "technologies": ["Flutter", "Local Auth", "WebView", "Caching"],
-      "link": {
-        "playStore": "https://play.google.com/store/apps/details?id=com.uniguard.gps",
-        "appStore": "https://apps.apple.com/app/gps-uniguard/id6759035102"
-      }
-    },
-    {
-      "id": 4,
-      "title": "Assets Track RFID",
-      "description": "The Assets Track RFID app is designed specifically for handheld devices equipped with RFID capabilities. The application leverages specialized SDKs provided by handheld device manufacturers to enable seamless RFID tag reading and management. It provides an intuitive interface for tracking and managing various items, batches, and transactions through integrated RFID scanning capabilities.",
-      "image": "/assets/images/projects/halmann_rfid.png",
-      "technologies": ["Kotlin", "REST API", "RFID SDK"],
-      "link": {
-        "playStore": "https://play.google.com/store/apps/details?id=com.uniguard.assets_track"
-      }
-    },
-    {
-      "id": 5,
       "title": "NetGuard",
       "description": "NetGuard is a comprehensive server monitoring application built with Kotlin Multiplatform, designed to help employees stay informed about server status and ensure timely maintenance. The app provides real-time server monitoring, incident reporting, and comprehensive analytics to keep your infrastructure running smoothly.",
       "image": "/assets/images/projects/netguard.png",
@@ -136,7 +101,10 @@
         "REST API",
         "Background Tasks",
         "Firebase Cloud Messaging",
+        "Stripe",
+        "Sendgrid",
         "Website",
+        "Go-Fiber",
         "Next.js"
       ],
       "link": {
@@ -146,7 +114,7 @@
       }
     },
     {
-      "id": 6,
+      "id": 3,
       "title": "NoiseHub",
       "description": "Noise Hub is a professional-grade noise monitoring application that gives you real-time visibility into ambient sound levels across multiple sensor locations — right from your mobile device.\n\nWhether you're managing an industrial facility, monitoring workplace safety, or overseeing environmental noise compliance, Noise Hub connects seamlessly to your hardware sensors and delivers live data where you need it.",
       "image": "/assets/images/projects/noise_hub.png",
@@ -162,7 +130,7 @@
       }
     },
     {
-      "id": 7,
+      "id": 4,
       "title": "ThermoGuard",
       "description": "An enterprise-grade mobile application developed with Flutter, designed to interface with the Temperature Monitoring Server. This application provides real-time environmental monitoring, sophisticated asset management hierarchy, and robust administrative controls.",
       "image": "/assets/images/projects/thermoguard.png",
@@ -170,6 +138,7 @@
         "Flutter",
         "Riverpod",
         "REST API",
+        "Go-Fiber",
         "Firebase Cloud Messaging"
       ],
       "link": {
@@ -178,7 +147,60 @@
       }
     },
     {
+      "id": 5,
+      "title": "MPASS",
+      "description": "MPASS is a premium Android application designed for cruise ship passenger management, focusing on safety, boarding efficiency, and emergency evacuation tracking using UHF RFID technology.",
+      "image": "/assets/images/projects/mpass.png",
+      "technologies": [
+        "Android",
+        "Kotlin",
+        "Jetpack Compose",
+        "RFID SDK",
+        "REST API"
+      ],
+      "link": {
+        "repository": "https://github.com/Uniguard-Indonesia/cruise-passenger-app"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Assets Track RFID",
+      "description": "The Assets Track RFID app is designed specifically for handheld devices equipped with RFID capabilities. The application leverages specialized SDKs provided by handheld device manufacturers to enable seamless RFID tag reading and management. It provides an intuitive interface for tracking and managing various items, batches, and transactions through integrated RFID scanning capabilities.",
+      "image": "/assets/images/projects/halmann_rfid.png",
+      "technologies": ["Kotlin", "REST API", "RFID SDK"],
+      "link": {
+        "playStore": "https://play.google.com/store/apps/details?id=com.uniguard.assets_track"
+      }
+    },
+    {
       "id": 8,
+      "title": "PTT Uniguard",
+      "description": "Introducing UNIGUARD PTT, a modern communication solution designed to simplify and accelerate your team's communication. In this digital era, we understand that speed, efficiency, and security are key to maintaining smooth business or organization operations. Uniguard PTT is here as an answer to these needs by offering a reliable and easy-to-use Push-to-Talk (PTT) platform.",
+      "image": "/assets/images/projects/ptt_uniguard.png",
+      "technologies": [
+        "Java",
+        "REST API",
+        "WebSocket",
+        "Mumble Server",
+        "Google Maps API"
+      ],
+      "link": {
+        "playStore": "https://play.google.com/store/apps/details?id=com.uniguard.ptt_app"
+      }
+    },
+    {
+      "id": 9,
+      "title": "GPS Uniguard",
+      "description": "GPS Uniguard is a mobile application for managing GPS tracking devices. It requires a Traccar server instance to work.",
+      "image": "/assets/images/projects/gps_uniguard.png",
+      "technologies": ["Flutter", "Local Auth", "WebView", "Caching"],
+      "link": {
+        "playStore": "https://play.google.com/store/apps/details?id=com.uniguard.gps",
+        "appStore": "https://apps.apple.com/app/gps-uniguard/id6759035102"
+      }
+    },
+    {
+      "id": 10,
       "title": "Bebunge",
       "description": "Bebunge is a One-Stop Portal Service owned by the Bekasi Regency Communication, Informatics, Cryptography and Statistics Service. With Bebunge, the public will get information about government programs and other information. The Bebunge application functions as an application for complaints and aspirations from the public which will then be forwarded to the relevant section for follow-up.",
       "image": "/assets/images/projects/bebunge.png",
@@ -188,7 +210,7 @@
       }
     },
     {
-      "id": 9,
+      "id": 11,
       "title": "Prosmart",
       "description": "ProSmart application is the first free online evidence return application in Indonesia. You can download this ProSmart application on Playstore. In this application you can check your belongings that have been used as evidence in court at the Cikarang District Court",
       "image": "/assets/images/projects/prosmart.png",
@@ -198,34 +220,13 @@
       }
     },
     {
-      "id": 10,
+      "id": 12,
       "title": "BLE Uniguard",
       "description": "BLE Uniguard is a mobile application for managing BLE tracking devices. It requires a Traccar server instance to work.",
       "image": "/assets/images/projects/ble_uniguard.png",
       "technologies": ["Kotlin", "REST API", "BLE"],
       "link": {
         "playStore": "https://play.google.com/store/apps/details?id=com.uniguard.ble_scanner"
-      }
-    },
-    {
-      "id": 11,
-      "title": "XChat - Real-time Chat App",
-      "description": "A comprehensive real-time chat application with Flutter frontend and Go backend. Features user authentication, private/group chats, real-time messaging via WebSocket, and AI integration with Google Gemini and OpenAI ChatGPT. Users can interact with AI assistants directly within chat rooms through tools-level integration. The project demonstrates full-stack development capabilities with modern technologies and AI/ML integration.",
-      "image": "/assets/images/projects/xhat_app_feature.png",
-      "technologies": [
-        "Flutter",
-        "Go",
-        "WebSocket",
-        "Riverpod",
-        "Clean Architecture",
-        "JWT",
-        "PostgreSQL",
-        "Google Gemini API",
-        "OpenAI API",
-        "AI Integration"
-      ],
-      "link": {
-        "repository": "https://github.com/Kirara02/Flutter-ChatApp"
       }
     }
   ],

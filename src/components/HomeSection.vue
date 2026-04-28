@@ -34,7 +34,7 @@ onMounted(() => {
       >
         <!-- Left side: Text content -->
         <div
-          class="flex-1 text-left"
+          class="flex-1 text-left relative z-20"
           :style="{
             opacity: opacity,
             transform: `translateY(${translateY}px)`,

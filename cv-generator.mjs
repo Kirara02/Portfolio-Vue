@@ -1,9 +1,10 @@
 import puppeteer from 'puppeteer';
 import fs from 'fs';
 import path from 'path';
+import readline from 'readline';
 
-// Get format from command line arguments
-const format = process.argv[2] || 'ats';
+// Supported formats
+const SUPPORTED_FORMATS = ['ats', 'developer', 'executive', 'compact'];
 
 function generateHTML(portfolio, format = 'ats') {
     const skillsByCategory = portfolio.skills.reduce((acc, skill) => {
@@ -347,7 +348,7 @@ function generateATSFormat(portfolio, skillsByCategory, categoryTitles) {
     <div class="section">
       <div class="section-title">ACHIEVEMENTS</div>
       <div class="summary">
-        • Successfully developed and published 7+ applications on Google Play Store and Apple App Store<br />
+        • Successfully developed and published 10+ applications on Google Play Store and Apple App Store<br />
         • Built full-stack applications with Flutter frontend and Go backend<br />
         • Experienced in real-time communication systems using WebSocket<br />
         • Proficient in both cross-platform and native mobile development<br />
@@ -629,7 +630,7 @@ function generateDeveloperFormat(portfolio, skillsByCategory, categoryTitles) {
    <div class="section">
      <div class="section-title">// ACHIEVEMENTS</div>
      <div class="achievement-list">
-       <div class="achievement-item">Successfully developed and published 7+ applications on Google Play Store and Apple App Store</div>
+       <div class="achievement-item">Successfully developed and published 10+ applications on Google Play Store and Apple App Store</div>
        <div class="achievement-item">Built full-stack applications with Flutter frontend and Go backend</div>
        <div class="achievement-item">Experienced in real-time communication systems using WebSocket</div>
        <div class="achievement-item">Proficient in both cross-platform and native mobile development</div>
@@ -980,7 +981,7 @@ function generateExecutiveFormat(portfolio, skillsByCategory, categoryTitles) {
      <div class="section-title">Professional Achievements</div>
      <div class="achievements-section">
        <ul class="achievement-list">
-         <li class="achievement-item">Successfully developed and published 7+ applications on Google Play Store and Apple App Store</li>
+         <li class="achievement-item">Successfully developed and published 10+ applications on Google Play Store and Apple App Store</li>
          <li class="achievement-item">Built full-stack applications with Flutter frontend and Go backend architecture</li>
          <li class="achievement-item">Experienced in real-time communication systems using WebSocket technology</li>
          <li class="achievement-item">Proficient in both cross-platform and native mobile development methodologies</li>
@@ -1300,8 +1301,8 @@ function generateCompactFormat(portfolio, skillsByCategory, categoryTitles) {
    <div class="section">
      <div class="section-title">Achievements</div>
      <div class="achievements">
-       • 7+ published apps on Play Store & App Store<br>
-       • Full-stack Flutter + Go development<br>
+        • 10+ published apps on Play Store & App Store<br>
+        • Full-stack Flutter + Go development<br>
        • Real-time WebSocket communication<br>
        • Cross-platform & native expertise<br>
        • Clean architecture & modern patterns
@@ -1311,9 +1312,43 @@ function generateCompactFormat(portfolio, skillsByCategory, categoryTitles) {
 </html>`;
 }
 
+async function selectFormat() {
+    // If format is provided via CLI argument, use it
+    if (process.argv[2] && SUPPORTED_FORMATS.includes(process.argv[2].toLowerCase())) {
+        return process.argv[2].toLowerCase();
+    }
+
+    // Otherwise, show interactive prompt
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
+
+    console.log('\n📋 CV Format Selection:');
+    console.log('1. 📄 ATS (Default) - Optimized for systems');
+    console.log('2. 👨‍💻 Developer - Modern dark theme');
+    console.log('3. 💼 Executive - Classic professional');
+    console.log('4. 📏 Compact - Minimal one-page style');
+    
+    return new Promise((resolve) => {
+        rl.question('\nSelect format (1-4) or press Enter for default (1): ', (answer) => {
+            rl.close();
+            const choice = answer.trim();
+            switch (choice) {
+                case '2': resolve('developer'); break;
+                case '3': resolve('executive'); break;
+                case '4': resolve('compact'); break;
+                case '1':
+                default: resolve('ats'); break;
+            }
+        });
+    });
+}
+
 async function generateCV() {
     try {
-        console.log('🚀 Starting CV generation...');
+        const format = await selectFormat();
+        console.log(`\n🚀 Starting CV generation in [${format.toUpperCase()}] format...`);
 
         // Read portfolio data
         const portfolioData = JSON.parse(fs.readFileSync('src/data/portfolio.json', 'utf8'));
